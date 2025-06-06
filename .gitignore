@@ -5,6 +5,8 @@ __pycache__/
 
 # myFiles
 .vscode/
+steps.txt
+urls.txt
 
 # C extensions
 *.so
