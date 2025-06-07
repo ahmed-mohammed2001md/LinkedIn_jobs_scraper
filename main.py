@@ -5,16 +5,13 @@ from Core.fetch_data import Fetch
 This is the main point of the app
 
 This app scrap data from Linkedin :
-- job-url or seach url
 - urls.txt 
+- single link
 
-
-username : trw01212@toaik.com
-passwrod : zzahmedzz1212
 '''
 if __name__ == '__main__':
     
-    print('1.txt file \n2-search url or job\n')
+    print('1.txt file \n2-single link\n')
 
     while True:
         choice = input("What is Ur Choice? : ")
@@ -35,16 +32,21 @@ if __name__ == '__main__':
 
                 else: # here the app search for every line url
                     # get the urls from urls.txt
+                    urls_list = []
 
+                    # get all urls and append them to urls_list
                     with open('urls.txt', 'r') as urls:
                         for url in urls:
-                            print(Fetch.get_data(url.strip()))
-
+                            urls_list.append(url.strip())
+                            
+                    Fetch.get_data(urls_list, 1)
 
                 break
                 
             elif choice == 2:
-                print('search url or job')
+                # single link
+                url = input('Enter the url start with https:// : ')
+                Fetch.get_data(url)
                 break
 
             else:

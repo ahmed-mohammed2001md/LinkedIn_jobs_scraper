@@ -7,6 +7,11 @@ __pycache__/
 .vscode/
 steps.txt
 urls.txt
+t.py
+outputs/
+core/__pycache__
+myconfig.py
+
 
 # C extensions
 *.so
