@@ -1,24 +1,17 @@
+# LinkedIn Job Scraper
+
 A powerful LinkedIn job scraper that extracts job listings from single or multiple pages, with proxy support and sign-in automation.
 
-# Features
-<ul>
+## Features
+- **Interactive Mode**: Choose between single URL or batch scraping
+- **Dual Scraping Modes**:
+  - Single page scraping
+  - Bulk scraping from urls.txt file
+- **Proxy Support**: Rotate proxies to avoid rate limiting
+- **Login Automation**: Automate LinkedIn sign-in process
+- **Configurable**: Easy setup through config files
+- **Auto URL Management**: URLs are automatically removed from urls.txt after successful scraping
 
-<li>Interactive Mode: Choose between single URL or batch scraping</li>
-
-<li>Dual Scraping Modes:</li>
-<ul>
-<li>Single page scraping</li>
-
-<li>Bulk scraping from urls.txt file</li>
-</ul>
-<li>Proxy Support: Rotate proxies to avoid rate limiting</li>
-
-<li>Login Automation: Automate LinkedIn sign-in process</li>
-
-<li>Configurable: Easy setup through config files</li>
-</ul>
-# Installation
-Clone the repository:
 
 bash
 git clone https://github.com/ahmed-mohammed2001md/LinkedIn_jobs_scraper.git
